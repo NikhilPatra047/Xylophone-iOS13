@@ -1,17 +1,14 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
-
 # Xylophone
 
-## Our Goal
+## Goal
 
-The goal of this tutorial is to dive into a simple iOS recipe - how to play sound and use an Apple library called AVFoundation. The most important skill of a great programmer is being able to solve your own problems. We’ll do that by exploring StackOverflow, Apple Documentation and learning how to search for solutions effectively. By learning to use these tools, you’ll be able to start adding custom features to an app and get it to do what you want it to.
+The goal of this project is to dive into a simple iOS recipe - how to play sound and use an Apple library called AVFoundation. 
 
+## What did I create
 
-## What you will create
+I created my first musical instrument.
 
-You will be making your first musical instrument! Music apps are so popular on the App Store that they even get their own category. So in this module, we’re going to make a colourful XyloPhone app. Get it? Ok, the jokes are bad, but remember, I only wrote the good ones... 
-
-## What you will learn
+## What did I learn
 
 * How to play sound using AVFoundation and AVAudioPlayer.
 * Understand Apple documentation and how to use StackOverflow.
@@ -24,36 +21,6 @@ You will be making your first musical instrument! Music apps are so popular on t
 * Code refactoring.
 * Basic debugging.
 
-## Replacement Code
+<img width="335" alt="Screenshot 2021-08-25 at 8 25 24 PM" src="https://user-images.githubusercontent.com/56184525/130814150-452aa2b7-f0fc-4481-8f16-d1e89328cde6.png">
 
-```
-import UIKit
-import AVFoundation
-
-class ViewController: UIViewController {
-    
-    var player: AVAudioPlayer!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    @IBAction func keyPressed(_ sender: UIButton) {
-        playSound()
-    }
-    
-    func playSound() {
-        let url = Bundle.main.url(forResource: "C", withExtension: "wav")
-        player = try! AVAudioPlayer(contentsOf: url!)
-        player.play()
-                
-    }
-}
-```
-
-
-
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](Documentation/readme-end-banner.png)
-
+>This is a part of iOS Development Bootcamp on UDEMY by Angela Yu. Check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
